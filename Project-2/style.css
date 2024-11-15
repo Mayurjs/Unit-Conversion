@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 550px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* Adjusted for better spacing */
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    /* Added padding for better spacing */
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input {
+    font-weight: bold;
+    width: 120px;
+    padding: 5px;
+    /* Added padding for better appearance */
+}
+
+p {
+    display: inline;
+    font-size: 30px;
+    margin: 0 10px;
+    /* Adjusted margin for better spacing */
+}
+
+/* Media query for responsive design (example) */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    input {
+        width: 80px;
+    }
+}
