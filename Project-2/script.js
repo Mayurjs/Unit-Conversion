@@ -10,5 +10,8 @@ inputBoxFeet.addEventListener("input", () => {
 inputBoxInch.addEventListener("input", () => {
     let inch = inputBoxInch.value;
     let feet = inch / 12;
+    if (!Number.isInteger(feet)) {
+        feet = feet.toFixed(2);
+    }
     inputBoxFeet.value = feet;
 });
